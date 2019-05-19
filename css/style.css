@@ -1,0 +1,468 @@
+/*-------------------------------
+CONFIGURAÇÕES GERAIS
+--------------------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: #888;
+}
+
+
+.container {
+	width: 90%;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 25px;
+}
+
+.col {
+	padding-top: 15px;
+}
+
+.clearfix::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.clearfix::befer {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.btn-center {
+	display: block;
+	width: 280px;
+	margin: auto;
+	margin-top: 40px;
+	padding: 8px;
+	border: 1px solid #707070;
+	border-radius: 4px;
+	color: #888;
+	background-color: #fff;
+	font-size: 16px;
+}
+
+
+/*-------------------------------
+HEADER
+--------------------------------*/
+
+main {
+	padding-top: 5px;
+}
+
+.main-header {
+	/*--background-color: #707070; -*/
+	position: relative;
+  	background-image: linear-gradient(#707070, #707070);
+  	height: 400px;
+}
+
+.svg-header {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+
+.main-nav {
+	padding-top: 45px;
+	color: #fff;
+}
+
+header h1 {
+	font-size: 20px;
+}
+
+header h1 span {
+	display: block;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+header p {
+	font-size: 14px;
+}
+
+.main-nav ul {
+	position: relative;
+	list-style-type: none;
+	padding-left: 8%;
+	padding-right: 8%;
+	height: 180px;
+	margin-top: 40px;
+}
+
+.main-nav li {
+	display: block;
+	position: absolute;
+	border: 1px solid #707070;
+	margin: 0px;
+	width: 144px;
+	background: #fff;
+	border-radius: 4px;
+	z-index: 100;
+}
+
+.main-nav li.top-left {
+	top: 20px;
+	left: calc(50% - 154px);
+}
+
+.main-nav li.top-right {
+	top: 20px;
+	left: calc(50% + 10px);
+}
+
+.main-nav li.bottom-left {
+	top: 80px;
+	left: calc(50% - 154px);
+}
+
+.main-nav li.bottom-right {
+	top: 80px;
+	left: calc(50% + 10px);
+}
+
+
+.main-nav a {
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	font-size: 14px;
+	color: #888;
+	text-align: center;
+}
+
+
+/*-------------------------------
+MAIN
+--------------------------------*/
+
+h2 {
+	font-size: 18px;
+}
+
+.algoritmo span {
+	display: inline-block;
+	float: right;
+}
+
+
+.algoritmo h2 {
+	font-size: 20px;
+}
+
+.ajude p {
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+#cadastro label,
+#amigo label {
+	font-size: 12px;
+}
+
+#cadastro input[type="text"],
+#cadastro input[type="email"],
+#amigo input[type="text"],
+#amigo input[type="email"]
+ {
+	width: 100%;
+	border: 1px solid #707070;
+	margin-top: 5px;
+	height: 30px;
+}
+
+#cadastro input[type="radio"] {
+	margin-right: 5px;
+}
+
+#cadastro label[for="masculino"] {
+	margin-right: 25px;
+}
+
+#cadastro button {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #707070;
+	border-radius: 4px;
+	color: #888;
+	background-color: #fff;
+	font-size: 16px;
+}
+
+#cadastro {
+	margin-bottom: 60px;
+}
+
+
+#compartilhe header p {
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+
+/*-------------------------------
+DIVISÓRIAS
+--------------------------------*/
+
+
+.tit-divisoria-two h2,
+.tit-divisoria-two,
+.tit-divisoria-one h2,
+.tit-divisoria-one {
+	display: inline-block;
+	margin: 0;
+}
+
+.divisoria-one {
+	width: calc((100% - 180.125px)/2);
+}
+
+.divisoria-two {
+	width: calc((100% - 204.047px)/2);
+}
+
+.container-divisoria .left {
+	float: left;
+	padding-right: 8px;
+}
+
+.container-divisoria .right {
+	float: right;
+	padding-left: 8px;
+}
+
+.container-divisoria hr {
+	border: 1px solid #707070;
+	margin: 0px;
+	margin-top: 9px;
+}
+
+
+/*-------------------------------
+PRODUTOS
+--------------------------------*/
+
+
+.col-produto {
+	width: 100%;
+}
+
+
+.col-img-produto {
+	width: 42%;
+	float: left;
+	margin: 0px;
+}
+
+.col-img-produto img {
+	width: 100%;
+	border: 1px solid #707070;
+}
+
+.col-descricao-produto {
+	width: 58%;
+	float: right;
+	margin: 0px;
+	padding-left: 20px;
+}
+
+
+.area-de-produtos {
+	margin-bottom: 70px;
+}
+
+.produto h3 {
+	margin-top: 0px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.produto p.p-original,
+.produto p.parcelamento,
+.produto p.descricao {
+	font-size: 12px;
+}
+
+.produto p.descricao {
+	display: none;
+}
+
+.produto p.p-promocional {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.produto button {
+	display: block;
+	width: 100%;
+	border: 1px solid #707070;
+	border-radius: 4px;
+	padding: 5px;
+	text-align: center;
+	color: #888;
+	font-size: 16px;
+	background-color: #fff;
+}
+
+
+
+/*-------------------------------
+FOOTER
+--------------------------------*/
+
+.bottom-footer {
+	position: relative;
+	height: 210px;
+	padding-top: 110px;
+  	background-image: linear-gradient(#707070, #707070);
+  	color: #fff;
+}
+
+.svg-footer {
+  	position: absolute;
+  	top: 0;
+  	width: 100%;
+  	height: 90px;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+.bottom-footer p {
+	font-size: 12px;
+	text-align: center;
+	line-height: 1.5em;
+	margin: 0;
+}
+
+/*-------------------------------
+RESPONSIVIDADE
+--------------------------------*/
+
+
+@media (min-width: 768px) {
+
+
+	.container {
+		width: 80%;
+		max-width: 800px;
+	}
+
+	.col-65 {
+		width: 65%;
+		float: left;
+		padding-right: 50px;
+	}
+
+	.col-35 {
+		width: 35%;
+		float: right;
+	}
+
+	.algoritmo span {
+		display: none;
+	}
+
+	.algoritmo h2 {
+		margin-top: 0px;
+		margin-bottom: 30px;
+	}
+
+	#amigo .p-30 {
+		width: 40%;
+	}
+
+	#amigo .p-30-left {
+		float: left;
+		margin-left: 8%;
+	}
+
+	#amigo .p-30-right {
+		float: right;
+		margin-right: 8%;
+	}
+
+
+
+	/*-------------------------------
+	PRODUTOS
+	--------------------------------*/
+
+	.col-produto {
+		width: 22%;
+		float: left;
+		margin-right: 4%;
+	}
+
+	.col-produto:nth-child(4n) {
+		margin-right: 0;
+	}
+
+	.col-img-produto {
+		width: 100%;
+	}
+
+	.col-descricao-produto {
+		width: 100%;
+	}
+
+	.produto p.descricao {
+		display: block;
+		padding-bottom: 10px;
+	}
+
+}
+
+
+
+
+@media (min-width: 990px) {
+
+
+	.main-nav ul {
+		position: initial;
+
+	}
+
+	.main-nav li {
+		position: initial;
+		display: inline-block;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.main-nav li.top-left,
+	.main-nav li.top-right,
+	.main-nav li.bottom-left,
+	.main-nav li.bottom-right {
+		top: initial;
+		left: initial;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

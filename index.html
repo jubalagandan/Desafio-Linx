@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Seleção de Produtos</title>
+
+    <!-- Normalize -->
+    <link href="css/normalize.css" rel="stylesheet">
+
+    <!-- Bootstrap for icons only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Customized CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+  <div class="wrapper">
+
+    <header class="main-header clearfix">
+
+      <div class="container clearfix">
+        <nav class="main-nav">
+          <h1>uma seleção de produtos <span>especial para você</span></h1>
+          <p>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
+          <ul class="clearfix">
+            <li class="top-left"><a href="#top">Conheça a Linx</a></li>
+            <li class="top-right"><a href="#top">Ajude o algorítmo</a></li>
+            <li class="bottom-left"><a href="#top">Seus produtos</a></li>
+            <li class="bottom-right"><a href="#top">Compartilhe</a></li>
+          </ul>
+        </nav>
+      </div> <!-- end container -->
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="svg-header">
+      <polygon fill="white" points="0,0 0,100 100,100"/>
+
+
+      </svg>
+    </header>
+
+
+
+    <main>
+      <div class="container algoritmo clearfix">
+        <div class="col col-65 ajude">
+          <h2>Ajude o algoritmo a ser mais certeiro <span><i class="glyphicon glyphicon-menu-up"></i></span></h2>
+          <p>Sed purus lacus, eleifend vitae pretium a, rhoncus ut sem. Nam pretium iaculis sollicitudin. Suspendisse potenti. Integer porta tincidunt ultricies. Morbi eget odio eu purus faucibus porttitor id nec risus. Cras varius ipsum et nunc finibus, sed fermentum felis congue. Nunc eu porttitor leo. Quisque commodo fermentum ex ac lobortis. Donec varius iaculis ipsum interdum scelerisque. Ut nisl purus, volutpat a velit nec, vulputate vehicula felis. Ut bibendum mauris dolor, eu elementum magna euismod eu. Curabitur scelerisque, purus ut porta varius, lacus tortor dignissim sem, ut tempus ligula massa ut eros.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis mauris mollis, mattis tortor a, viverra arcu. Nullam in quam fringilla, consequat nisi sit amet, scelerisque ante. Suspendisse luctus dictum massa et pellentesque. Proin aliquam vulputate ultrices. Quisque vitae pretium ex. Duis dictum augue quis dolor convallis malesuada. Proin lacinia diam et nunc tempus, ac mattis erat convallis. Nulla facilisi.</p>
+        </div> <!-- end col-65 -->
+
+        <div class="col col-35">
+          <form method="post" id="cadastro">
+            <p>
+              <label for="name">Seu nome:</label>
+              <input type="text" id="name" name="user_name" maxlength="50">
+            </p>
+            <p>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="user_email">
+            </p>
+            <p>
+              <label for="">CPF:</label>
+              <input type="text" id="cpf" name="user_cpf" maxlength="14">
+            </p>
+            <p>
+              <input type="radio" id="masculino" name="user_genero"><label for="masculino">Masculino</label>
+              <input type="radio" id="feminino" name="user_genero"><label for="masculino">Feminino</label>
+            </p>
+            <button type="submit">Enviar</button>      
+          </form>
+        </div> <!-- end col-35 -->
+
+      </div> <!-- end container -->
+
+
+      <!-- Divisória-one: Sua seleção especial -->
+      <div class="container container-divisoria">
+        <div class="col divisoria-one left"><hr></div>
+        <div class="col tit-divisoria-one"><h2>Sua seleção especial</h2></div>
+        <div class="col divisoria-one right"><hr></div>
+      </div> <!-- end container -->
+
+
+
+
+
+      <div class="container clearfix area-de-produtos">
+
+        <div class="clearfix" id="carrega-produto">
+
+
+
+
+        </div>
+        <button class="btn-center">Ainda mais produtos aqui!</button>
+
+      </div> <!-- end container -->
+
+
+
+
+
+
+      <!-- Divisória-two: Compartilhe a novidade -->
+      <div class="container container-divisoria">
+        <div class="col divisoria-two left"><hr></div>
+        <div class="col tit-divisoria-two"><h2>Compartilhe a novidade</h2></div>
+        <div class="col divisoria-two right"><hr></div>
+      </div> <!-- end container -->
+
+
+
+
+      <div class="container" id="compartilhe">
+        <header>
+          <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+        </header>
+        <form method="post" id="amigo">
+            <fieldset>
+            <p class="p-30 p-30-left">
+              <label for="name_amigo">Nome do seu amigo:</label>
+              <input type="text" id="name_amigo" name="user_name_amigo" maxlength="50">
+            </p>
+            <p class="p-30 p-30-right">
+              <label for="email_amigo">E-mail dele:</label>
+              <input type="email" id="email_amigo" name="user_email_amigo">
+            </p>
+            </fieldset>
+            <button type="submit" class="btn-center">Enviar agora</button>
+            
+          </form>
+        
+      </div> <!-- end container -->
+
+    </main>
+
+
+
+
+    <footer class="bottom-footer">
+      <div class="container">
+        <p>Testando suas habilidades em HTML, CSS, e JS.</p>
+        <p>Links Impulse</p>
+        <p>2019</p>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="svg-footer">
+      <polygon fill="white" points="100,0 0,100 0,0"/>
+      </svg>
+    </footer>
+
+  </div> <!-- end wrapper -->
+
+  <script src="js/getproducts.js"></script>
+
+  </body>
